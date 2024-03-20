@@ -1,0 +1,138 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.button {
+    display: block;
+    border-radius: 7px;
+    border: none;
+    background: #201658;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0px 14px 56px -11px #201658;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.button span:after {
+    content: 'new Blog';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+}
+
+.button:hover span {
+    padding-right: 4.55em;
+}
+
+.button:hover span:after {
+    opacity: 4;
+    right: 0;
+}
+
+.topic {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.button1 {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #201658;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 2.75em;
+    min-width: 0;
+    width: 100px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.button1:disabled {
+    pointer-events: none;
+}
+
+.button1:hover {
+    color: #fff;
+    background-color: #201658;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button1:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+/* --------------------------------Login page----------------------------- */
+
+.box{
+    width: 20%;
+    height: 420px;
+    width: 400px;
+    border-radius: 30px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 65px -28px #201658;
+    background-color: rgba(197, 222, 224, 0.271);
+
+}
+.bg1{
+    background-image: url(https://assets-global.website-files.com/600698a317a14c282d07a177/65c3a5ac1e23e74cd4055d59_ceo-startup-gen-ai-p-1600.png);
+   height:fit-content;
+   height: 160vh;
+   background-attachment: fixed;
+}
+.bg{
+    background-image: url(https://assets-global.website-files.com/600698a317a14c282d07a177/65c3a5ac1e23e74cd4055d59_ceo-startup-gen-ai-p-1600.png);
+   height:fit-content;
+   height: 100vh;
+   background-attachment: fixed;
+}
+
+/* ------------------BLOG PAGE-------------------------------------- */
+
+.bgcolor{
+    background-color: #201658;
+}
+.box1{
+    
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 65px -28px #201658;
+    background-color: rgba(208, 238, 240, 0.832);
+
+}
+.box1 img{
+    border-radius: 70PX;
+}
+.mrg{
+    margin-top: 180px;
+}
