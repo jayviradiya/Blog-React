@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { FaArrowLeftLong } from "react-icons/fa6";
 
-
 import { Link, Redirect, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Blog() {
@@ -17,7 +16,7 @@ function Blog() {
     axios.get('https://blog-node-q2al.onrender.com/blog/find')
       .then((res) => {
         console.log(res.data.data);
-        setBlog(res.data.data)
+        setBlog(res.data.data) 
       })
       .catch((error) => {
         console.log(error.response.data.message);
@@ -36,14 +35,14 @@ function Blog() {
   }
 
   useEffect(() => {
-    getBlog()
+    getBlog();
 }, [])
 
   // delete
   const Delet = (id) => {
     axios.delete('https://blog-node-q2al.onrender.com/blog/delete/' + id)
       .then((res) => {
-        console.log(res);
+        history.push('/')
       })
       .catch((error) => {
         console.log(error.response.data.message);
