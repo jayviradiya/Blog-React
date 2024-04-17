@@ -168,6 +168,10 @@
     .res-txt1{
             font-size: 14px;        
     }
+    .mrg1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 @media (max-width: 320px) {
     .lw{

@@ -71,13 +71,14 @@ const Home = () => {
                         </Row>
                 </div>
             </Container>
-            <div className='container-fluid bg-white text-dark mrg'>
+            <div className='container-fluid bg-dark text-dark mrg '>
+
                 <div className="container">
                     <div className="row d-flex g-5">
                         {
                             blog.map((el, index) => {
-                                return <div key={index} className='mb-5'>
-                                 <Card style={{ width: '18rem' }} className='box1'>
+                                return <div key={index} className='mb-5 col-4'>
+                                 {/* <Card style={{ width: '24 rem' }} className='box1'>
                                  <Card.Img variant="top" onClick={() => card(el._id)} src={'https://blog-node-q2al.onrender.com/images/' + el.image}/>
                                  <Card.Body>
                                   <div className='ms-271'>
@@ -86,7 +87,12 @@ const Home = () => {
                                    <div><span onClick={() => card(el._id)} className="text-dark details fw-bold">Read More..!</span></div>
                                   </div>
                                  </Card.Body>
-                               </Card>
+                               </Card> */}
+                               <div className='row'>
+                                    <div className='col-6'>
+                                        <img src="" alt="" />
+                                    </div>
+                               </div>
                             </div>
                             })
                         }
