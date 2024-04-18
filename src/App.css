@@ -90,6 +90,61 @@
     box-shadow: none;
     transform: translateY(0);
 }
+/*Button visit*/
+.cssbuttons-io-button {
+    background: #201658;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #201658;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #201658;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #201658;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
 /* --------------------------------Login page----------------------------- */
 
 .box{
@@ -104,8 +159,7 @@
 }
 .bg1{
     background-image: url(https://assets-global.website-files.com/600698a317a14c282d07a177/65c3a5ac1e23e74cd4055d59_ceo-startup-gen-ai-p-1600.png);
-   height:fit-content;
-   height: 160vh;
+   height: 100vh;
    background-attachment: fixed;
 }
 .bg{
@@ -129,7 +183,9 @@
 
 }
 .mrg{
-    margin-top: 180px;
+    margin-top: 110px;
+    box-shadow: #3B3B3B 0px 0px 50px;
+
 }
 .mrg1{
     margin-top: 250px;
@@ -142,8 +198,25 @@
     text-align: justify;
     line-height: 30px;
 }
-
-
+.res-txt5{
+    font-size: 28px;
+}
+.res-txt6{
+    font-size: 18px;
+}
+.res-txt7{
+    font-size: 16px;
+}
+.res-txt8{
+    font-size: 23px;
+}
+.fn-color{
+    color: #c2c6c7c5;
+}
+.icon1{
+    color: rgba(88, 255, 249, 0.893);
+    font-size: 30px;
+}
 
 
 @media (min-width: 1200px) {
@@ -159,6 +232,14 @@
     .res-txt4{
         font-size: 16px;
     }
+    .res-txt5{
+        font-size: 23px;
+    }
+    .res-txt6{
+        font-size: 15px;
+    }
+   
+   
 }
 @media (max-width: 431px) {
     .res-txt{
@@ -171,6 +252,12 @@
     .mrg1{
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .res-txt5{
+        font-size: 20px;
+    }
+    .res-txt6{
+        font-size: 12px;
     }
 }
 @media (max-width: 320px) {
@@ -185,5 +272,27 @@
     }
     .res-txt4{
         font-size: 13px;
+    }
+    .res-txt5{
+        font-size: 16px;
+    }
+    .res-txt7{
+        font-size: 14px;
+    }
+    .res-txt8{
+        font-size:18px;
+    }
+    .jst-txt{
+        line-height: 22px;
+    }
+    .mrg{
+        margin-top: 80px;
+    }
+    .button1{
+        width: 80px;
+        font-size: 15px
+    }
+    .box{
+        height: 380px;
     }
 }

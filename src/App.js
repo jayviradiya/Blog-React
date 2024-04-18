@@ -29,7 +29,7 @@ function App() {
             <Signup/>
           </Route>
 
-          <Route path="/blog/create">
+          <Route path="/create">
                 <Cblog/>
           </Route>
           

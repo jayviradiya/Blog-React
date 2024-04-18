@@ -21,9 +21,9 @@ function Signup() {
 
     return (
         <div>
-            <div className='d-flex justify-content-center p-5 bg'>
+            <div className='d-flex justify-content-center p-sm-5 p-4 bg1'>
                 <div className='box'>
-                    <h1 className='text-center mt-5'>SignUp</h1>
+                    <h1 className='text-center mt-sm-5 mt-3'>SignUp</h1>
                     <Formik
                         initialValues={{
                             uname: '',
@@ -35,11 +35,11 @@ function Signup() {
                         }}>
 
                         <Form className='text-center mt-5'>
-                            <Field id="firstName" name="uname" placeholder="UserName" className="rounded-pill border-1 ps-4 pt-2 pe-5 pb-2" /><br /><br />
+                            <Field id="firstName" name="uname" placeholder="UserName" className="rounded-pill border-1 ps-sm-4 ps-2 pt-2 pe-sm-5 pe-3 pb-2" /><br /><br />
 
-                            <Field id="email" name="email" placeholder="Email" type="email" className="rounded-pill border-1 ps-4 pt-2 pe-5 pb-2" /><br /><br />
+                            <Field id="email" name="email" placeholder="Email" type="email" className="rounded-pill border-1 ps-sm-4 ps-2 pt-2 pe-sm-5 pe-3 pb-2" /><br /><br />
 
-                            <Field id="password" name="password" placeholder="Password" type="pass" className="rounded-pill border-1 ps-4 pt-2 pe-5 pb-2" /><br /><br />
+                            <Field id="password" name="password" placeholder="Password" type="pass" className="rounded-pill border-1 ps-sm-4 ps-2 pt-2 pe-sm-5 pe-3 pb-2" /><br /><br />
 
                             <button className="button1 mb-3" type="submit">SignUp</button><br />
                         </Form>
