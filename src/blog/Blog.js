@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { IoRemoveOutline } from "react-icons/io5";
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -48,7 +48,7 @@ function Blog() {
   const Delet = (id) => {
     axios.delete('https://blog-node-q2al.onrender.com/blog/delete/' + id)
       .then((res) => {
-        history.push('/');
+        history.push('/blog');
       })
       .catch((error) => {
         console.log(error.response.data.message);
@@ -73,7 +73,7 @@ function Blog() {
 
 
   return (
-    <div className="bg1">
+    <div className="bg">
       <header className="py-4">
         <div>
           <h2 className='text-white text-center py-3 font-monospace bg-dark'><IoRemoveOutline className='icon1' /> Blogs <IoRemoveOutline className='icon1' /></h2>
@@ -173,16 +173,20 @@ function Blog() {
           </div>
         </Container>
       </Container>
-      <Container fluid className='py-2'>
+      <Container fluid className='pt-2'>
         <Container>
-          <div className='d-flex justify-content-center py-sm-3 p-1'><Link to="/" className="text-decoration-none"><button class="cssbuttons-io-button">
-            Back to Home
-            <div class="icon">
-              <IoIosArrowRoundBack className='fs-2' />
-            </div>
-          </button>
-          </Link>
+          <Row>
+          <Col sm={6} className='order-sm-1 order-2'>
+          <div className='d-flex justify-content-evenly py-sm-3 p-1'>
+            <Link to="/" className="text-decoration-none"><button class="cssbuttons-io-button res-txt7">Back to Home<div class="icon"><IoIosArrowRoundBack className='fs-2' /></div></button></Link>
           </div>
+            </Col>
+            <Col sm={6} className='order-sm-2 order-1'>
+          <div className='d-flex justify-content-evenly py-sm-3 p-1'>
+             <Link to="/login"> <button className='button rounded-4 res-txt7'><span>+ Add</span></button></Link>
+           </div>
+            </Col>
+          </Row>
         </Container>
       </Container>
       <Footer />
