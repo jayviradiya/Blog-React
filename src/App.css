@@ -182,6 +182,16 @@
     background-color: rgba(208, 238, 240, 0.832);
 
 }
+.box_1{
+    
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 65px -30px #201658;
+    background-color: rgba(208, 238, 240, 0.832);
+
+}
 .mrg{
     margin-top: 110px;
     box-shadow: #3B3B3B 0px 0px 50px;
@@ -260,6 +270,11 @@
         font-size: 12px;
     }
 }
+@media(max-width:376px){
+        .box_1{
+            width: 90%;
+        }
+}
 @media (max-width: 320px) {
     .lw{
         width: 33%;
@@ -294,5 +309,8 @@
     }
     .box{
         height: 380px;
+    }
+    .box_1{
+        width: 90%;
     }
 }
