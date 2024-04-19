@@ -48,7 +48,7 @@ const Cblog = () => {
             })
             .then((res) => {
                 console.log(res.data.data);
-                history.push('/')
+                history.push('/blog')
             })
             .catch((error) => {
                 console.log(error.response);
