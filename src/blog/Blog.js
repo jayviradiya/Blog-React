@@ -140,7 +140,7 @@ function Blog() {
               <hr className='text-white' />
               <div className="col-lg-5 col-12">
                 <div className="">
-                  <h3 className='fw-bold text-white d-sm-none mb-3 d-block res-txt3'>Best food for good health</h3>
+                  <h3 className='fw-bold text-white d-sm-none mb-3 d-block res-txt3'>{el.title}</h3>
                   <img className='w-100 imgradus' onClick={() => card(el._id)} src={'https://blog-node-q2al.onrender.com/images/' + el.image} alt="" />
                 </div>
               </div>
