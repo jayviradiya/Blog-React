@@ -121,14 +121,15 @@ function Blog() {
           {/*blog = 2*/}
           <div className="row d-flex g-3 py-4 align-items-center">
             <hr className='text-white' />
-            <div className="col-lg-7 col-12">
+            <div className="col-lg-7 col-12 order-sm-1 order-2">
               <div className='ms-271 mt-2'>
-                <h3 className='fw-bold text-white'>Gain weight at home</h3>
+                <h3 className='fw-bold text-white d-sm-block mb-3 d-none'>Gain weight at home</h3>
                 <p className='text-white jst-txt res-txt4'>If you’re looking to gain weight at home, there are several approaches you can take to achieve your goal. Here are some tips to help you gain weight in a healthy and controlled manner :<br />Increase calorie intake: To gain weight, you need to consume more calories than you burn. Calculate your daily calorie needs using an online calculator and aim to consume around 300-500 calories above that number.Remember, gaining weight in a healthy manner requires patience and consistency. Focus on a balanced diet and regular exercise to promote overall well-being while achieving your weight gain goals.</p>
               </div>
             </div>
-            <div className="col-lg-5 col-12">
+            <div className="col-lg-5 col-12 order-sm-2 order-1">
               <div className="">
+              <h3 className='fw-bold text-white d-sm-none mb-3 d-block'>Gain weight at home</h3>
                 <img className='w-100 imgradus' onClick={() => card()} src='https://hips.hearstapps.com/hmg-prod/images/young-woman-is-weighing-herself-in-a-weighing-scale-royalty-free-image-1688136307.jpg?crop=1xw:0.84691xh;center,top&resize=1200:*' alt="" />
               </div>
             </div>
