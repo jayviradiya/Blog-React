@@ -30,7 +30,7 @@ function Blog() {
   }
 
   const getBlogone = () => {
-    axios.get('https://blog-node-q2al.onrender.com/blog/findone/'+id)
+    axios.get('https://blog-node-q2al.onrender.com/blog/findone/' + id)
       .then((res) => {
         // console.log(res.data.data);
         setData(res.data.data)
@@ -57,12 +57,14 @@ function Blog() {
 
   const card = (id) => {
     console.log(id);
-    localStorage.setItem('blogid',id)
+    localStorage.setItem('blogid', id)
     // history.push('/blog')
   }
 
   // Update
   const Update = (id) => {
+    console.log("id :- ", id);
+    localStorage.setItem('updateId',id)
     history.push('/blog/create')
   }
 
@@ -129,7 +131,7 @@ function Blog() {
             </div>
             <div className="col-lg-5 col-12 order-sm-2 order-1">
               <div className="">
-              <h3 className='fw-bold text-white d-sm-none mb-3 d-block'>Gain weight at home</h3>
+                <h3 className='fw-bold text-white d-sm-none mb-3 d-block'>Gain weight at home</h3>
                 <img className='w-100 imgradus' onClick={() => card()} src='https://hips.hearstapps.com/hmg-prod/images/young-woman-is-weighing-herself-in-a-weighing-scale-royalty-free-image-1688136307.jpg?crop=1xw:0.84691xh;center,top&resize=1200:*' alt="" />
               </div>
             </div>
@@ -151,9 +153,9 @@ function Blog() {
                 </div>
               </div>
               <div className='d-flex'>
-            <div className='me-2 text-center button' onClick={() => Delet(el._id)}>Delete</div>
-            <div className=' text-center button' onClick={() => Update(el._id)}>Upate</div>
-          </div>
+                <div className='me-2 text-center button' onClick={() => Delet(el._id)}>Delete</div>
+                <div className=' text-center button' onClick={() => Update(el._id)}>Upate</div>
+              </div>
             </div>
           })}
           {/*blog = 3*/}
@@ -177,15 +179,15 @@ function Blog() {
       <Container fluid className='pt-2'>
         <Container>
           <Row>
-          <Col sm={6} className='order-sm-1 order-2'>
-          <div className='d-flex justify-content-evenly py-sm-3 p-1'>
-            <Link to="/" className="text-decoration-none"><button class="cssbuttons-io-button res-txt7">Back to Home<div class="icon"><IoIosArrowRoundBack className='fs-2' /></div></button></Link>
-          </div>
+            <Col sm={6} className='order-sm-1 order-2'>
+              <div className='d-flex justify-content-evenly py-sm-3 p-1'>
+                <Link to="/" className="text-decoration-none"><button class="cssbuttons-io-button res-txt7">Back to Home<div class="icon"><IoIosArrowRoundBack className='fs-2' /></div></button></Link>
+              </div>
             </Col>
             <Col sm={6} className='order-sm-2 order-1'>
-          <div className='d-flex justify-content-evenly py-sm-3 p-1'>
-             <Link to="/login"> <button className='button rounded-4 res-txt7'><span>+ Add</span></button></Link>
-           </div>
+              <div className='d-flex justify-content-evenly py-sm-3 p-1'>
+                <Link to="/login"> <button className='button rounded-4 res-txt7'><span>+ Add</span></button></Link>
+              </div>
             </Col>
           </Row>
         </Container>
