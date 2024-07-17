@@ -223,6 +223,9 @@
     color: rgba(88, 255, 249, 0.893);
     font-size: 30px;
 }
+.bshadow{
+    box-shadow: white 0px 0px 50px -22px
+}
 
 
 @media (min-width: 1200px) {

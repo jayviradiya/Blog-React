@@ -67,8 +67,8 @@ const Home = () => {
                             <h1 className='mb-sm-4 mb-2 res-txt3'>Choose the perfect design</h1>
                             <h5 className='jst-txt res-txt4'>Create a beautiful blog that fits your style. Choose from a selection of easy-to-use templates – all with flexible layouts and hundreds of background images – or design something new.</h5>
                         </Col>
-                        <Col className='col-sm-6 col-12 order-sm-2 order-1'>
-                            <img src="https://i0.wp.com/hirewebdesignagency.com/wp-content/uploads/2023/09/webb-designn-bennr.png?w=1000&ssl=1" width="100%" alt="" />
+                        <Col className='col-sm-6 col-12 order-sm-2 order-1 bshadow'>
+                            <img src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/11/how-to-write-a-blog-post-760x406.jpeg" width="100%" alt="" />
                         </Col>
                     </Row>
                 </div>
